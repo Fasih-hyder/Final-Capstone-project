@@ -200,8 +200,12 @@ const Category = (props) => {
 
                         <h1 className=' h2-2 '>We Help with a Varity of Dental Services</h1>
 
-                        <span className='fonts mt-5'>Lucius Sergius Catilina against Catiline context it the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live.</span>
-                        <h1 className=' h2-3 mt-3'>Steps to Consultant And Services</h1>
+                        <span className='fonts mt-5'>
+                            Lucius Sergius Catilina against Catiline context it the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live.
+                        </span>
+                        <h1 className=' h2-3 mt-3'>
+                            Steps to Consultant And Services
+                        </h1>
                         <img src={pic1} className='mt-5' alt="" />
                         <br />
                         <span className='fonts  '>
@@ -227,20 +231,37 @@ const Category = (props) => {
                 <div className='row'>
                     <div className='col-md-6'>
                         <span className='div-bg-2 rounded-2  px-4 py-1 '>Best Solution</span>
-                        <h1 className=' h2-4 '>Perfect solution to grow your new visitors</h1>
-                        <span className='fonts'>Lucius Sergius Catilina. Occasionally the first Oration the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live.</span>
-                        <h1 className=' h2-3 '>Authorised features For Our Customers</h1>
-                        <img src={dot}className='mb-3' alt="" /><span className='h2-3 mx-2 '>Create Advance Custom Fields</span>
+                        <h1 className=' h2-4 '>
+                            Perfect solution to grow your new visitors
+                        </h1>
+                        <span className='fonts'>
+                            Lucius Sergius Catilina. Occasionally the first Oration the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live.
+                        </span>
+                        <h1 className=' h2-3 '>
+                            Authorised features For Our Customers
+                        </h1>
+                        <img src={dot} className='mb-3' alt="" />
+                        <span className='h2-3 mx-2 '>
+                            Create Advance Custom Fields
+                        </span>
                         <br />
-                        <span>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</span>
+                        <span>
+                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+                        </span>
                         <br />
-                        <img src={dot}className='mb-3' alt="" /><span className='h2-3 mx-2 '>Reach More Audience</span>
+                        <img src={dot} className='mb-3' alt="" />
+                        <span className='h2-3 mx-2 '>Reach More Audience</span>
                         <br />
-                        <span className='mt-5'>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</span>
+                        <span className='mt-5'>
+                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+                        </span>
                         <br />
-                        <img src={dot}className='mb-3' alt="" /><span className='h2-3 mx-2 '>Make Brand Awareness</span>
+                        <img src={dot} className='mb-3' alt="" />
+                        <span className='h2-3 mx-2 '>Make Brand Awareness</span>
                         <br />
-                        <span>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</span>
+                        <span>
+                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore
+                        </span>
                     </div>
                     <div className='col-md-6'>
                         <img className='img-fluid' src={ladies} alt="" />
