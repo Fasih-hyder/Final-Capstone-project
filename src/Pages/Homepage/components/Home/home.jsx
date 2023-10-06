@@ -1,16 +1,19 @@
 import React from 'react'
 import './home.css';
-import image from '../../Assests/images/logo.png'
-import troggler from '../../Assests/images/Sort.svg'
-import sign from '../../Assests/images/Item → Link 2.svg'
-import appointment from '../../Assests/images/Item → Link.svg'
-import click from '../../Assests/images/span.square 6.svg'
-import book from '../../Assests/images/Button.svg'
-import call from '../../Assests/images/Link.png'
-import women from '../../Assests/images/hs-1.png'
+import image from '../../../../Assests/images/logo.png'
+import troggler from '../../../../Assests/images/Sort.svg'
+import sign from '../../../../Assests/images/Item → Link 2.svg'
+import appointment from '../../../../Assests/images/Item → Link.svg'
+import click from '../../../../Assests/images/span.square 6.svg'
+import book from '../../../../Assests/images/Button.svg'
+import call from '../../../../Assests/images/Link.png'
+import women from '../../../../Assests/images/hs-1.png'
+
 function Home() {
   return (
+    
     <div className='bg-color'>
+   
       <nav class="navbar navbar-expand-lg  ">
         <div class="container">
           <a class="navbar-brand" href="#"><img height={40} src={image} /></a>
@@ -23,7 +26,7 @@ function Home() {
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">User Account</a>
+                <a class="nav-link active" aria-current="page" href="/House">User Account</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Pages</a>

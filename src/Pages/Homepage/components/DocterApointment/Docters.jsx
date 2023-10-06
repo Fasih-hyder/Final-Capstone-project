@@ -1,13 +1,13 @@
 import React from 'react'
 import './Docter.css'
-import pic1 from "../../Assests/images/doc-1.svg";
-import pic2 from "../../Assests/images/doc-2.svg";
-import pic3 from "../../Assests/images/doc-3.PNG";
-import pic4 from "../../Assests/images/doc-4.svg";
-import pic5 from "../../Assests/images/doc-5.svg";
-import pic6 from "../../Assests/images/doc-6.svg";
-import pic7 from "../../Assests/images/doc-7.png";
-import pic8 from "../../Assests/images/doc-8.png";
+import pic1 from "../../../..//Assests/images/doc-1.svg";
+import pic2 from "../../../../Assests/images/doc-2.svg";
+import pic3 from "../../../../Assests/images/doc-3.PNG";
+import pic4 from "../../../../Assests/images/doc-4.svg";
+import pic5 from "../../../../Assests/images/doc-5.svg";
+import pic6 from "../../../../Assests/images/doc-6.svg";
+import pic7 from "../../../../Assests/images/doc-7.png";
+import pic8 from "../../../../Assests/images/doc-8.png";
 const Doctor = (props) => {
     const card = [
         {

@@ -1,8 +1,8 @@
 import React from 'react'
-import click from '../../Assests/images/span.square 6.svg'
-import download from '../../Assests/images/app-store.png'
-import callus from '../../Assests/images/number.png'
-import scr from '../../Assests/images/mobile-app.png'
+import click from "../../../../Assests/images/span.square 6.svg"
+import download from '../../../../Assests/images/app-store.png'
+import callus from '../../../../Assests/images/number.png'
+import scr from '../../../../Assests/images/mobile-app.png'
 import './Mobileapp.css';
 function Mobileapp() {
   return (
