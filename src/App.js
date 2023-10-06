@@ -1,16 +1,17 @@
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 import './App.css';
 import Homepage from './Pages/Homepage/homepages';
-import House from './SeacondComponents/Home/home2';
+import Coporter from './Carporate-Agency/DigitalSense/Carporate'
+
 function App() {
   let Router = createBrowserRouter([
     {
-      path:"/",
+      path:"/Homepage",
       element:  <Homepage/>
     },
     {
-      path:"/House",
-      element:  <House/>
+      path:"/Coporter",
+      element:  <Coporter/>
     },
   ])
   return (

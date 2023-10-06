@@ -23,10 +23,10 @@ function Home() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto gap-3 mt-2 mx-3 mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./Coporter">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/House">User Account</a>
+                <a class="nav-link active" aria-current="page" href="#">User Account</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Pages</a>
@@ -38,8 +38,9 @@ function Home() {
 
 
             </ul>
-            <img src={sign} />
-            <img src={appointment} />
+            <a href="#"> <img src={sign} /></a>
+           <a href="#">  <img src={appointment} /> </a>
+          
           </div>
         </div>
       </nav>

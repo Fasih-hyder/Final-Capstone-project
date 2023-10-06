@@ -8,13 +8,13 @@ function footer() {
   return (
     <div>
       
-				<div>
+				<div className='mt-5 '>
 					<div class="container">
 						<div class="row">
 							
 							<div class="col-lg-3 col-md-4">
 								<div class="footer-widget mt-3">
-									<img src={image} height={70} className='img-fluid'/>
+									<img src={image} height={70} width={200} className='img-fluid hight'/>
 									<div class="footer-add mt-4">
 										<p className='para'>Collins Street West, Victoria Near Bank Road<br/>Australia QHR12456.</p>
 									</div>

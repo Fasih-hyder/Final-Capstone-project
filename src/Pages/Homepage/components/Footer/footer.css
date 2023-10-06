@@ -11,3 +11,10 @@
     color: #6E8497;
     
 }
+@media (max-width:400px) {
+    .hight {
+     width: 200px;
+    }
+
+
+}

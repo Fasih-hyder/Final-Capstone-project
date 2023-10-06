@@ -30,7 +30,7 @@ function Mobileapp() {
             </div>
           </div>
           <div className='col-md-6 mt-5'>
-          <img src={scr} height={600}  alt="" />
+          <img src={scr} className='mx-3 mb-5 py-5 ' height={600}  alt="" />
           </div>
         </div>
       </div>
