@@ -8,7 +8,10 @@ import arr from '../../../../Assests/images/Arrow.svg'
 import get from '../../../../Assests/images/Get-started.svg'
 import check from '../../../../Assests/images/check-list.svg'
 import str from '../../../../Assests/images/star.svg'
+import str2 from '../../../../Assests/images/forword.svg'
+import str3 from '../../../../Assests/images/google.svg'
 import star from '../../../../Assests/images/golden-star.svg'
+import pay from '../../../../Assests/images/razopay.svg'
 import maiol from '../../../../Assests/images/software-tools.png'
 function Home() {
   return (
@@ -85,9 +88,73 @@ function Home() {
             <img src={star} className='img-fluid mb-3 mx-3' alt="" />
             <p className='text-white fw-bold mt-1 '>4.8/5</p>
             </div>
-            <p className='text-white fw-bold  mx-5 '>4742 Reviews</p>
+            <div className='col-md-1'>
+
+            </div>
+            </div>
+            <div className='col-md-4 mx-3 ms-5'>
+              <div className=' d-flex'>
+            <img src={str2} className='img-fluid ' alt="" />
+            <img src={star} className='img-fluid mb-3 mx-3' alt="" />
+            <p className='text-white fw-bold mt-1 '>4.8/5</p>
+            </div>
+           
+            </div>
+            <div className='col-md-3 '>
+              <div className=' d-flex'>
+            <img src={str3} className='img-fluid ' alt="" />
+            <img src={star} className='img-fluid mb-3 mx-3' alt="" />
+            <p className='text-white fw-bold mt-1 '>4.8/5</p>
             </div>
             
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div className='container mt-5'>
+        <div className='row'>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+        </div>
+      </div>
+      <div className='container mt-5'>
+        <div className='row'>
+          <div className='col-md-2'>
+
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+          <div className='col-md-2'>
+                 <img src={pay} className='img-fluid ' alt="" />
+          </div>
+
+          <div className='col-md-2'>
+
           </div>
         </div>
       </div>

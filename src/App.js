@@ -6,6 +6,10 @@ import Coporter from './Carporate-Agency/DigitalSense/Carporate'
 function App() {
   let Router = createBrowserRouter([
     {
+      path:"/",
+      element:  <Homepage/>
+    },
+    {
       path:"/Homepage",
       element:  <Homepage/>
     },
