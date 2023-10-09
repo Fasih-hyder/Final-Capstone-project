@@ -86,7 +86,7 @@ const Doctor = (props) => {
                         return (
                             <>
                                 <div className='col-md-3 pt-5 '>
-                                    <div className='border rounded-3 text-center px-3 py-3 '>
+                                    <div className=' border border-1 rounded-3 text-center px-3 py-3 '>
                                 <div><img src={data.immageUrl} class="img-fluid" alt="" /></div>
                                
                                 </div>

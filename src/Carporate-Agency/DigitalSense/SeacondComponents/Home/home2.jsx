@@ -11,7 +11,16 @@ import str from '../../../../Assests/images/star.svg'
 import str2 from '../../../../Assests/images/forword.svg'
 import str3 from '../../../../Assests/images/google.svg'
 import star from '../../../../Assests/images/golden-star.svg'
-import pay from '../../../../Assests/images/razopay.svg'
+import pay1 from '../../../../Assests/images/razopay.svg'
+import pay2 from '../../../../Assests/images/sitepoint.svg'
+import pay3 from '../../../../Assests/images/cordrops.svg'
+import pay4 from '../../../../Assests/images/PayPal.svg'
+import pay5 from '../../../../Assests/images/drible.svg'
+import pay6 from '../../../../Assests/images/unplish.svg'
+import pay7 from '../../../../Assests/images/Hub.svg'
+import pay8 from '../../../../Assests/images/shopify.svg'
+import pay9 from '../../../../Assests/images/Rakta.svg'
+import pay10 from '../../../../Assests/images/cococola.svg'
 import maiol from '../../../../Assests/images/software-tools.png'
 function Home() {
   return (
@@ -114,50 +123,51 @@ function Home() {
       </div>
 
       <div className='container mt-5'>
-        <div className='row'>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-        </div>
-      </div>
-      <div className='container mt-5'>
-        <div className='row'>
-          <div className='col-md-2'>
-
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-                 <img src={pay} className='img-fluid ' alt="" />
-          </div>
-
-          <div className='col-md-2'>
-
+          <div className="text-center py-5"><h3>More Than 25,000 Teams Use Killar</h3></div>
+          <div className='row'>
+            <div className='col-md-2'>
+              <img src={pay1} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay2} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay3} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay4} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay5} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay6} className='img-fluid ' alt="" />
+            </div>
           </div>
         </div>
-      </div>
+        <div className='container mt-5'>
+          <div className='row'>
+            <div className='col-md-2'>
+
+            </div>
+            <div className='col-md-2'>
+              <img src={pay7} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay8} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay9} className='img-fluid ' alt="" />
+            </div>
+            <div className='col-md-2'>
+              <img src={pay10} className='img-fluid ' alt="" />
+            </div>
+
+            <div className='col-md-2'>
+
+            </div>
+          </div>
+        </div>
     </div>
   )
 }

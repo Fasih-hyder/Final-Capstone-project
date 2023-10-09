@@ -3,6 +3,8 @@ import Category from './components/Top Category/Category';
 import Screen from './components/App/Mobileapp.jsx';
 import Appontment from './components/DocterApointment/Docters.jsx';
 import Footer from './components/Footer/footer.jsx';
+
+
 function homepages() {
   return (
     <>
@@ -11,6 +13,8 @@ function homepages() {
       <Appontment />
        <Screen />
       <Footer /> 
+     
+
     </>
   );
 };
