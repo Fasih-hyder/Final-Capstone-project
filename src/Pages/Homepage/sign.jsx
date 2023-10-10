@@ -29,12 +29,12 @@ function Signin() {
             </div>
 
             <h1 className="text-uppercase text-center mb-5 fw-bold">Hello, Again</h1>
-            <MDBInput wrapperClass='mb-4' placeholder='User Name' size='lg' id='form1' type='text' />
+            <form action="">
+            <MDBInput required wrapperClass='mb-4' placeholder='User Name' size='lg' id='form1' type='text' />
 
-            <MDBInput wrapperClass='mb-4' placeholder='Password' size='lg' id='form3' type='password' />
-
-
-            <button type="button" class="btn btn-primary btn-lg w-100">Log in</button>
+            <MDBInput required wrapperClass='mb-4' placeholder='Password' size='lg' id='form3' type='password' />
+            <button type="submit" class="btn btn-primary btn-lg w-100">Log in</button>
+            </form>
             <div className='d-flex flex-row justify-content-between  mb-4'>
               <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='Save Password' />
               <a class="nav-link active" aria-current="page" href="#">Forget Password?</a>
@@ -63,7 +63,7 @@ function Signin() {
 
 
 
-      
+
 
 
 
@@ -91,22 +91,24 @@ function Signin() {
 
                     <p className="">Welcome Back! Slect Methode to Register:</p>
                     <MDBRow>
-
+                      
                       <MDBCol md='6'>
+                        <form action="">
                         <MDBInput wrapperClass='mb-4' placeholder='First Name' size='lg' id='form1' type='text' required />
+                      </form>
                       </MDBCol>
 
                       <MDBCol md='6'>
-                        <MDBInput  wrapperClass='mb-4 required' placeholder='Last Name' size='lg' id='form2' type='text'  required />
+                        <MDBInput wrapperClass='mb-4 required' placeholder='Last Name' size='lg' id='form2' type='text' required />
                       </MDBCol>
 
                     </MDBRow>
-                    
-                    <MDBInput wrapperClass='mb-4' placeholder='Password' size='lg' id='form3' type='password'  required/>
-                    <MDBInput wrapperClass='mb-4' placeholder='Confirm Password' size='lg' id='form3' type='password'  required/>
+
+                    <MDBInput wrapperClass='mb-4' placeholder='Password' size='lg' id='form3' type='password' required />
+                    <MDBInput wrapperClass='mb-4' placeholder='Confirm Password' size='lg' id='form3' type='password' required />
 
                     <div className='d-flex flex-row justify-content-between  mb-4'>
-                      <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I agree to Terms & Conditions'  required/>
+                      <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I agree to Terms & Conditions' required />
 
                     </div>
                     <button type="button" class="btn btn-primary btn-lg w-100">Sign up</button>
@@ -124,7 +126,7 @@ function Signin() {
 
                 </MDBCol>
                 <MDBCol md='6' className="d-none d-md-block">
-                  <MDBCardImage src={Man}  alt="Sample photo" className="h-100" fluid />
+                  <MDBCardImage src={Man} alt="Sample photo" className="h-100" fluid />
                 </MDBCol>
 
 
