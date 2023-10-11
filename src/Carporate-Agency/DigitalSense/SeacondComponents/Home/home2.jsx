@@ -1,9 +1,9 @@
 import React from 'react'
 import './home2.css';
-import image from '../../../../Assests/images/logo.png'
-import troggler from '../../../../Assests/images/Sort.svg'
-import sign from '../../../../Assests/images/Item → Link 2.svg'
-import appointment from '../../../../Assests/images/register.svg'
+// import image from '../../../../Assests/images/logo.png'
+// import troggler from '../../../../Assests/images/Sort.svg'
+// import sign from '../../../../Assests/images/Item → Link 2.svg'
+// import appointment from '../../../../Assests/images/register.svg'
 import arr from '../../../../Assests/images/Arrow.svg'
 import get from '../../../../Assests/images/Get-started.svg'
 import check from '../../../../Assests/images/check-list.svg'
@@ -136,52 +136,28 @@ function Home() {
         </div>
       </div>
 
-      <div className='container mt-5'>
-        <div className="text-center py-5"><h3>More Than 25,000 Teams Use Killar</h3></div>
-        <div className='row'>
-          <div className='col-md-2'>
-            <img src={pay1} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay2} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay3} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay4} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay5} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay6} className='img-fluid ' alt="" />
-          </div>
-        </div>
-      </div>
-      <div className='container mt-5'>
-        <div className='row'>
-          <div className='col-md-2'>
-
-          </div>
-          <div className='col-md-2'>
-            <img src={pay7} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay8} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay9} className='img-fluid ' alt="" />
-          </div>
-          <div className='col-md-2'>
-            <img src={pay10} className='img-fluid ' alt="" />
-          </div>
-
-          <div className='col-md-2'>
-
-          </div>
-        </div>
-      </div>
+      
+        <div className="container">
+            <div className="text-center py-5 fw-bold"><h3>More Than 25,000 Teams Use Killar</h3></div>
+            <div className="row text-center">
+                <div className="col-md-2"><img src={pay1} className="img-fluid" alt="" /> 
+                </div>
+                <div className="col-md-2"><img src={pay2} className="img-fluid" alt="" />
+                <div className="pt-5"><img src={pay7} className="img-fluid" alt="" /></div>
+                </div>
+                <div className="col-md-2"><img src={pay3} className="img-fluid" alt="" />
+                <div className="pt-5"><img src={pay8} className="img-fluid" alt="" /></div>
+                </div>
+                <div className="col-md-2"><img src={pay4} className="img-fluid" alt="" />
+                <div className="pt-5"><img src={pay9} className="img-fluid" alt="" /></div>
+                </div>
+                <div className="col-md-2"><img src={pay5} className="img-fluid" alt="" />
+                <div className="pt-5"><img src={pay10} className="img-fluid" alt="" /></div>
+                </div>
+                <div className="col-md-2"><img src={pay6} className="img-fluid" alt="" /></div>
+            </div>
+            </div>
+            
 
 
 
@@ -212,22 +188,22 @@ function Home() {
                     these matters to this principle of brand <br />
                     marketing selection.</p>
                 </div>
-                <div className="border border-2 rounded-4 mt-4 p-4"><img src={sym2} className="img-fluid" alt="" />
-                  <h3>Digital Marketing</h3>
+                <div className="border border-2 rounded-4 mt-4 p-4"><img src={sym3} className="img-fluid" alt="" />
+                  <h3>Web Email Hosting</h3>
                   <p>The wise man therefore always holds in <br />
                     these matters to this principle of brand <br />
                     marketing selection.</p>
                 </div>
               </div>
               <div className="col-md-6  mt-5 ">
-                <div className="border border-2 rounded-4 p-4"><img src={sym3} className="img-fluid" alt="" />
-                  <h3>Digital Marketing</h3>
+                <div className="border border-2 rounded-4 p-4"><img src={sym2} className="img-fluid" alt="" />
+                  <h3>SEO & SMO Services</h3>
                   <p>The wise man therefore always holds in <br />
                     these matters to this principle of brand <br />
                     marketing selection.</p>
                 </div>
                 <div className="border border-2 rounded-4 mt-4 p-4"><img src={sym4} className="img-fluid" alt="" />
-                  <h3>Digital Marketing</h3>
+                  <h3>Social Advertising</h3>
                   <p>The wise man therefore always holds in <br />
                     these matters to this principle of brand <br />
                     marketing selection.</p>
