@@ -70,13 +70,13 @@ function Enchance() {
         <>
           <form class="row g-3 px-5  text-light">
             <div class="col-md-6 ">
-              <label for="inputEmail4" class="form-label">
+              <label for="inputEmail4" class="form-label  ">
                 Name
               </label>
               <input
                 type="Name"
                 placeholder="Name"
-                class="form-control"
+                class="form-control bg-primary"
                 id="inputEmail4"
                 required
               />
@@ -88,7 +88,7 @@ function Enchance() {
               <input
                 type="email"
                 placeholder="Email"
-                class="form-control"
+                class="form-control bg-primary"
                 id="inputPassword4"
                 required
               />
@@ -100,7 +100,7 @@ function Enchance() {
               <input
                 type="Phone"
                 placeholder="Phone"
-                class="form-control"
+                class="form-control bg-primary"
                 id="inputEmail4"
                 required
               />
@@ -112,13 +112,16 @@ function Enchance() {
               <input
                 type="text"
                 placeholder="Company"
-                class="form-control"
+                class="form-control bg-primary"
                 id="inputPassword4"
                 required
               />
             </div>
             <div class="col-md-12">
-              <textarea name="city" id="" cols="133" rows="5"></textarea>
+            <label for="inputPassword4" class="form-label">
+            Explan your Project
+              </label>
+              <textarea name="city" id="" cols="133" rows="5" className="bg-primary" placeholder="Your project Description....."></textarea>
             </div>
 
             <div class="col-12 d-flex gap-3">
@@ -130,7 +133,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                  Check me out
+                SEO Website Audit
                 </label>
               </div>
               <div class="form-check ">
@@ -141,7 +144,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                  Email Marketing
+                Email Marketing
                 </label>
               </div>
               <div class="form-check">
@@ -152,7 +155,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                  Social Networks
+                Social Networks
                 </label>
               </div>
               <div class="form-check">
@@ -163,7 +166,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                  Content Marketing
+                Content Marketing
                 </label>
               </div>
             </div>

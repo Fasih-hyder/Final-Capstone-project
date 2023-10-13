@@ -1,17 +1,17 @@
 import React from 'react'
-import image from '../../../../Assests/images/logo.png'
-import image2 from '../../../../Assests/images/List.svg'
-import img1 from '../../../../Assests/images/Link1.svg'
-import img2 from '../../../../Assests/images/Link.svg'
+import image from '../../Assests/images/logo.png'
+import image2 from '../../Assests/images/List.svg'
+import img1 from '../../Assests/images/Link1.svg'
+import img2 from '../../Assests/images/Link.svg'
 
-import './footer.css'
-function Footer() {
+import './footers.css'
+function Footers() {
   return (
-    <div>
+    <div className='bgs '>
 
       <div className='mt-5 p-5'>
         <div class="container">
-          <div class="row">
+          <div class="row ">
 
             <div class="col-lg-3 col-md-4">
               <div class="footer-widget mt-3">
@@ -24,7 +24,7 @@ function Footer() {
             </div>
             <div class="col-lg-2 col-md-4">
               <div class="footer-widget">
-                <h4 class="widget-title">The Navigation</h4>
+                <h4 class="widget-title text-white">The Navigation</h4>
                 <p className='para'>Talent Marketplace</p>
                 <p className='para' >Payroll Services</p>
                 <p className='para'>Direct Contracts</p>
@@ -37,7 +37,7 @@ function Footer() {
 
             <div class="col-lg-2 col-md-4">
               <div class="footer-widget">
-                <h4 class="widget-title">Our Resources</h4>
+                <h4 class="widget-title text-white">Our Resources</h4>
                 <p className='para'>Free Business tools</p>
                 <p className='para'>Affiliate Program</p>
                 <p className='para'>Success Stories</p>
@@ -50,7 +50,7 @@ function Footer() {
 
             <div class="col-lg-2 col-md-6">
               <div class="footer-widget">
-                <h4 class="widget-title">The Company</h4>
+                <h4 class="widget-title text-white">The Company</h4>
                 <p className='para'>About Us</p>
                 <p className='para'>Leadership</p>
                 <p className='para'>Contact Us</p>
@@ -62,7 +62,7 @@ function Footer() {
 
             <div class="col-lg-3 col-md-6">
               <div class="footer-widget">
-                <h4 class="widget-title">Download Apps</h4>
+                <h4 class="widget-title text-white ">Download Apps</h4>
                 <div class="app-wrap">
                   <img src={img1} class="img-fluid" alt="" />
                   <img src={img2} class="img-fluid mt-2" alt="" />
@@ -94,4 +94,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footers

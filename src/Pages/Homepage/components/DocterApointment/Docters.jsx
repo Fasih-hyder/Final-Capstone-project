@@ -77,7 +77,7 @@ const Doctor = (props) => {
         <>
             <div className='container mt-5'>
                 <div className='text-center'>
-                    <span className='div-bg-3'>Meet Doctors</span>
+                    <span className='div-bg-3 rounded-5 px-4 py-1'>Meet Doctors</span>
                     <h1 className='pt-3'>High Qualified Doctors List</h1>
                 </div>
 

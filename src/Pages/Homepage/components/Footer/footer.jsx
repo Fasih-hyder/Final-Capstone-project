@@ -3,25 +3,13 @@ import image from '../../../../Assests/images/logo.png'
 import image2 from '../../../../Assests/images/List.svg'
 import img1 from '../../../../Assests/images/Link1.svg'
 import img2 from '../../../../Assests/images/Link.svg'
-import image3 from '../../../../Assests/images/logo.png'
-import troggler from '../../../../Assests/images/Sort.svg'
-import sign from '../../../../Assests/images/Item → Link 2.svg'
-import appointment from '../../../../Assests/images/register.svg'
-import arr from '../../../../Assests/images/Arrow.svg'
-import get from '../../../../Assests/images/Get-started.svg'
-import check from '../../../../Assests/images/check-list.svg'
-import str from '../../../../Assests/images/star.svg'
-import str2 from '../../../../Assests/images/forword.svg'
-import str3 from '../../../../Assests/images/google.svg'
-import star from '../../../../Assests/images/golden-star.svg'
 
-import maiol from '../../../../Assests/images/software-tools.png'
 import './footer.css'
 function footer() {
   return (
     <div>
 
-      <div className='mt-5 '>
+      <div className='mt-5 p-5'>
         <div class="container">
           <div class="row">
 
