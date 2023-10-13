@@ -2,16 +2,16 @@ import React from "react";
 import "./About.css";
 import working from "../../Assests/images/work.svg";
 import fff from "../../Assests/images/Countless.svg";
+import Footer from "./SeacondComponents/Footer/footer";
 function Aboutus() {
   return (
-    <div>
+    <div> 
       <div className="body-container">
         <div className="position-relative">
           <h1 className=" text-white fw-bold mx-5  marg    position-absolute top-50 start-0 ">
             We're Here for <br />
             Solving your Solutions
           </h1>
-          {/* position-absolute top-50 start-0 translate-middle */}
           <p className="text-white mx-5  marg-1 fs-6 text   position-absolute top-50 start-0">
             Debet iuvaret noluisse et per, ea rebum nominati argumentum vis. Vis
             legere cotidieque <br /> te, fierent senserit explicari mei an.
@@ -75,6 +75,7 @@ function Aboutus() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
