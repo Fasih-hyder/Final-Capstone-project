@@ -63,7 +63,6 @@ function Signin() {
 
             <div className="text-center d-flex justify-content-around py-3">
               <span className="">
-          
                 <button className="text-white bg-primary px-5 py-2 rounded-2 border-0">
                   Facebook
                 </button>

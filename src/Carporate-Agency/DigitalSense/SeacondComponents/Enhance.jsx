@@ -118,10 +118,17 @@ function Enchance() {
               />
             </div>
             <div class="col-md-12">
-            <label for="inputPassword4" class="form-label">
-            Explan your Project
+              <label for="inputPassword4" class="form-label">
+                Explan your Project
               </label>
-              <textarea name="city" id="" cols="133" rows="5" className="bg-primary" placeholder="Your project Description....."></textarea>
+              <textarea
+                name="city"
+                id=""
+                cols="133"
+                rows="5"
+                className="bg-primary"
+                placeholder="Your project Description....."
+              ></textarea>
             </div>
 
             <div class="col-12 d-flex gap-3">
@@ -133,7 +140,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                SEO Website Audit
+                  SEO Website Audit
                 </label>
               </div>
               <div class="form-check ">
@@ -144,7 +151,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                Email Marketing
+                  Email Marketing
                 </label>
               </div>
               <div class="form-check">
@@ -155,7 +162,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                Social Networks
+                  Social Networks
                 </label>
               </div>
               <div class="form-check">
@@ -166,7 +173,7 @@ function Enchance() {
                   required
                 />
                 <label class="form-check-label" for="gridCheck">
-                Content Marketing
+                  Content Marketing
                 </label>
               </div>
             </div>

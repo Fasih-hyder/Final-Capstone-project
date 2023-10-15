@@ -69,19 +69,22 @@ const Navbar = () => {
                   </Link>
                   <ul class="dropdown-menu">
                     <li>
-                    <Link to="#" class="dropdown-item ">
-                    
-                    Shop
-                  
-                    </Link>
-                    <ul class="submenu ">
-                    <li className="dropdown-item">shop-catalog</li>
-                    <Link to="/ShopSingle"> <li className="dropdown-item" >shop-single</li></Link>
-                    <Link to="/Checkout"> <li className="dropdown-item" >Check out</li></Link>
-               
-            </ul>
-                  </li>
-                                     
+                      <Link to="#" class="dropdown-item ">
+                        Shop
+                      </Link>
+                      <ul class="submenu ">
+                        <li className="dropdown-item">shop-catalog</li>
+                        <Link to="/ShopSingle">
+                          {" "}
+                          <li className="dropdown-item">shop-single</li>
+                        </Link>
+                        <Link to="/Checkout">
+                          {" "}
+                          <li className="dropdown-item">Check out</li>
+                        </Link>
+                      </ul>
+                    </li>
+
                     <Link to="/Aboutus" class="nav-link  link-body-emphasis">
                       About us
                     </Link>

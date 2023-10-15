@@ -14,7 +14,7 @@ import about4 from "../../Assests/images/about 4.svg";
 import Footers from "./footer";
 function Aboutus() {
   return (
-    <div> 
+    <div>
       <div className="body-container">
         <div className="position-relative">
           <h1 className=" text-white fw-bold mx-5  marg    position-absolute top-50 start-0 ">
@@ -85,49 +85,162 @@ function Aboutus() {
         </div>
       </div>
       <div className="text-center container mt-5">
-     <span className="text rounded-5  px-4 py-1 mx-3">Our Experts</span> 
-   <h1><b>Meet Our Expert Team</b></h1> 
-   <p><b>vero accusamus et iusto odio dignissimos ducimus</b></p> 
-     
-      <div className="row">
-      <div className="col-md-3 ">
-          <div className=" border  rounded-4 p-3">
-        <div> <img src={about1} className="img-fluid" alt="" /></div>
-        <h5>Admin Cliver'o</h5>
-        <span>Web Graphics</span>
-        <div><span> <a href=""><img src={link1} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link2} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link3} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link4} className="img-fluid" alt="" /> </a> </span></div>
-        </div>
-        </div>
-           <div className="col-md-3 ">
-          <div className=" border  rounded-4 p-3">
-        <div> <img src={about2} className="img-fluid" alt="" /></div>
-        <h5>Joseph G. Younker</h5>
-        <span>Web Developer</span>
-        <div><span> <a href=""><img src={link1} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link2} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link3} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link4} className="img-fluid" alt="" /> </a> </span></div>
+        <span className="text rounded-5  px-4 py-1 mx-3">Our Experts</span>
+        <h1>
+          <b>Meet Our Expert Team</b>
+        </h1>
+        <p>
+          <b>vero accusamus et iusto odio dignissimos ducimus</b>
+        </p>
 
-        </div>
-        </div>
-        <div className="col-md-3 ">
-          <div className=" border rounded-4 p-3">
-        <div> <img src={about3} className="img-fluid" alt="" /></div>
-        <h5>Erica J. Davis</h5>
-        <span>Content Writer</span>
-        <div><span> <a href=""><img src={link1} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link2} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link3} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link4} className="img-fluid" alt="" /> </a> </span></div>
-
-        </div>
-        </div>
-        <div className="col-md-3 ">
-          <div className=" border  rounded-4 p-3">
-        <div> <img src={about4} className="img-fluid" alt="" /></div>
-        <h5>Leslie R. Beach</h5>
-        <span>App Developer</span>
-        <div><span> <a href=""><img src={link1} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link2} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link3} className="img-fluid" alt="" /> </a> </span><span> <a href=""><img src={link4} className="img-fluid" alt="" /> </a> </span></div>
-
-        </div>
-        </div>
+        <div className="row">
+          <div className="col-md-3 ">
+            <div className=" border  rounded-4 p-3">
+              <div>
+                
+                <img src={about1} className="img-fluid" alt="" />
+              </div>
+              <h5>Admin Cliver'o</h5>
+              <span>Web Graphics</span>
+              <div>
+                <span>
+                  
+                  <a href="">
+                    <img src={link1} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                
+                  <a href="">
+                    <img src={link2} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                 
+                  <a href="">
+                    <img src={link3} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+               
+                  <a href="">
+                    <img src={link4} className="img-fluid" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3 ">
+            <div className=" border  rounded-4 p-3">
+              <div>
+              
+                <img src={about2} className="img-fluid" alt="" />
+              </div>
+              <h5>Joseph G. Younker</h5>
+              <span>Web Developer</span>
+              <div>
+                <span>
+                 
+                  <a href="">
+                    <img src={link1} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                  
+                  <a href="">
+                    <img src={link2} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                
+                  <a href="">
+                    <img src={link3} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                  
+                  <a href="">
+                    <img src={link4} className="img-fluid" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3 ">
+            <div className=" border rounded-4 p-3">
+              <div>
+              
+                <img src={about3} className="img-fluid" alt="" />
+              </div>
+              <h5>Erica J. Davis</h5>
+              <span>Content Writer</span>
+              <div>
+                <span>
+                 
+                  <a href="">
+                    <img src={link1} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+               
+                  <a href="">
+                    <img src={link2} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                 
+                  <a href="">
+                    <img src={link3} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                
+                  <a href="">
+                    <img src={link4} className="img-fluid" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3 ">
+            <div className=" border  rounded-4 p-3">
+              <div>
+            
+                <img src={about4} className="img-fluid" alt="" />
+              </div>
+              <h5>Leslie R. Beach</h5>
+              <span>App Developer</span>
+              <div>
+                <span>
+               
+                  <a href="">
+                    <img src={link1} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+              
+                  <a href="">
+                    <img src={link2} className="img-fluid" alt="" />
+                  </a>
+                </span>
+                <span>
+                
+                  <a href="">
+                    <img src={link3} className="img-fluid" alt="" />{" "}
+                  </a>{" "}
+                </span>
+                <span>
+                
+                  <a href="">
+                    <img src={link4} className="img-fluid" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    
+
       <Footers />
     </div>
   );

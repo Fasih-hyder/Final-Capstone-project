@@ -1,53 +1,47 @@
 .body-container {
-    background-image: url('../../Assests/images/work-5.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-   
+  background-image: url("../../Assests/images/work-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }
-.marg{
-    margin-top: 150px;
-    font-size: 50px;
-    font-family: sans-serif;
+.marg {
+  margin-top: 150px;
+  font-size: 50px;
+  font-family: sans-serif;
 }
 
-.marg-1{
+.marg-1 {
+  color: #d1d1d1ab;
+  margin-top: 300px;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.marg-2 {
+  margin-top: 400px;
+}
+.text {
+  color: green;
+  background-color: #0098681a;
+}
+.te {
+  font-size: 20px;
+  color: #5d6e7d;
+}
+.teet {
+  color: orange;
+  background-color: #e95f331a;
+}
+@media (max-width: 576px) {
+  .marg {
+    margin-top: 150px;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .marg-1 {
     color: #d1d1d1ab;
     margin-top: 300px;
-    font-size: 10px;
+    font-size: 6px;
     font-family: sans-serif;
-}
-.marg-2{
-    
-    margin-top: 400px;
-    
-}
-.text{
-    color: green;
-background-color: #0098681A ;
-}
-.te{
-    font-size: 20px;
-    color: #5D6E7D;
-}
-.teet{
-    color: orange;
-    background-color: #E95F331A;
-}
-@media (max-width:576px) {
-    .marg{
-        margin-top: 150px;
-        font-size: 30px;
-        font-family: sans-serif;
-    }
-    .marg-1{
-        color: #d1d1d1ab;
-        margin-top: 300px;
-        font-size: 6px;
-        font-family: sans-serif;
-    }
-    
-
-
+  }
 }

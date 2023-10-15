@@ -50,10 +50,6 @@ function App() {
   return (
     <>
       <RouterProvider router={route} />
-      
-      {/* <Homepage/>
-    <Signin/>
-    <Carporate/> */}
     </>
   );
 }
