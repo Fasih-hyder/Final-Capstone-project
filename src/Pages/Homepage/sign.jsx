@@ -14,6 +14,7 @@ import {
 function Signin() {
   return (
     <>
+    <form  action="https://formspree.io/f/mvojdvol"  method="POST">
       <MDBContainer
         fluid
         className="d-flex align-items-center justify-content-center "
@@ -82,6 +83,7 @@ function Signin() {
           </MDBCardBody>
         </MDBCard>
       </MDBContainer>
+     </form>
       <Outlet />
     </>
   );

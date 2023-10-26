@@ -1,10 +1,33 @@
 import image from "../../../../Assests/images/logo.png";
 import troggler from "../../../../Assests/images/Sort.svg";
 import sign from "../../../../Assests/images/Item → Link 2.svg";
-import appointment from "../../../../Assests/images/Item → Link.svg";
+import appointment from "../../../../Assests/images//kart.png";
 import corp from "../../../../Assests/images/Corporate.png";
 import { Link, Outlet } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  decreaseQuantity,
+  increaseQuantity,
+  removeItem,
+} from "../../../../functins/functins";
 const Navbar = () => {
+  const { items } = useSelector((state) => state.cart);
+
+  const dispatch = useDispatch();
+  console.log(items);
+
+  const removItemHandler = (date) => {
+    dispatch(removeItem(date));
+  };
+
+  const increaseIQuantityHandler = (date) => {
+    dispatch(increaseQuantity(date));
+  };
+
+  const decreaseIQuantityHandler = (date) => {
+    dispatch(decreaseQuantity(date));
+  };
+
   return (
     <div className="">
       <nav class="navbar navbar-expand-lg  ">
@@ -39,14 +62,15 @@ const Navbar = () => {
                   Home
                 </Link>
                 <ul class="dropdown-menu">
-                  <Link to="/" class="nav-link px-2 link-body-emphasis">
-                    Home
+                  <Link to="/" className="dropdown-item px-2 ">
+                    shop-catalog
                   </Link>
-                  <Link
-                    to="/Carporate"
-                    class="nav-link px-2 link-body-emphasis"
-                  >
+
+                  <Link to="/Carporate" class="nav-link  link-body-emphasis">
                     <img src={corp} className="img-fluid" alt="" />
+                  </Link>
+                  <Link to="/Homepage" class="nav-link px-2 link-body-emphasis">
+                    Hospital
                   </Link>
                 </ul>
               </li>
@@ -73,14 +97,11 @@ const Navbar = () => {
                         Shop
                       </Link>
                       <ul class="submenu ">
-                        <li className="dropdown-item">shop-catalog</li>
-                        <Link to="/ShopSingle">
-                          {" "}
-                          <li className="dropdown-item">shop-single</li>
+                        <Link to="/ShopSingle" className="dropdown-item">
+                          shop-single
                         </Link>
-                        <Link to="/Checkout">
-                          {" "}
-                          <li className="dropdown-item">Check out</li>
+                        <Link to="/Checkout" className="dropdown-item">
+                          Check out
                         </Link>
                       </ul>
                     </li>
@@ -98,15 +119,102 @@ const Navbar = () => {
               </li>
             </ul>
             <Link to="/Signin">
-              <img src={sign} />
+              <img src={sign} alt="" />
             </Link>
-            <a href="#">
-              <img src={appointment} />
-            </a>
+
+            <span
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <img
+                style={{ height: 40 }}
+                src={appointment}
+                class="img-fluid"
+                alt="..."
+              />
+            </span>
+            {/* off Canvass */}
           </div>
         </div>
       </nav>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Your Cart
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        {/* content area */}
+        <div class="offcanvas-body">
+          {items?.map((product) => {
+            return (
+              <>
+                <div className="text-black">
+                  <h6>{product?.heading}</h6>
 
+                  <div className="">
+                    <img
+                      src={product?.immageUrl}
+                      style={{ height: 100 }}
+                      className="img-fluid"
+                      alt="pic"
+                    />
+                  </div>
+                
+                  <div className="d-flex">
+                    <button
+                      className="bg-primary p-2 m-2  text-white bg-opacity-75 border-0 rounded-2"
+                      onClick={() => decreaseIQuantityHandler(product)}
+                    >
+                      -
+                    </button>
+                    <span className="mt-3">{product?.Quantity}</span>
+                    <button
+                      className="bg-primary p-2 m-2  text-white bg-opacity-75 border-0 rounded-2"
+                      onClick={() => increaseIQuantityHandler(product)}
+                    >
+                      +
+                    </button>
+                  </div>
+                  {/* <div className="d-flex ">
+                    <span className="px-3">
+                    {product?.OldPrice}
+                      </span>
+                      <span>
+                    {product?.NewPrice}
+                      </span>
+                  </div> */}
+                  
+                  <button
+                    className="bg-primary p-2 m-2 text-white bg-opacity-75 border-0 rounded-3"
+                    onClick={() => removItemHandler(product)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </>
+            );
+          })}
+        </div>
+        <Link to="/Checkout">
+          <button className="mx-5 bg-success p-2 px-3  m-2 text-white bg-opacity-75 border-0 rounded-3">
+            Checkout
+          </button>
+        </Link>
+      </div>
       <Outlet />
     </div>
   );

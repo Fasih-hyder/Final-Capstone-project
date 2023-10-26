@@ -8,7 +8,7 @@ import "./footers.css";
 function Footers() {
   return (
     <div className="bgs ">
-      <div className="mt-5 p-5">
+      <div className="p-5">
         <div class="container">
           <div class="row ">
             <div class="col-lg-3 col-md-4">

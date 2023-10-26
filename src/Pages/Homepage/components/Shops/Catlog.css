@@ -1,0 +1,46 @@
+.back-ground{
+    background-image: url("../../../../Assests/images/shop-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.bg-1{
+    background-color: #0098681A;
+    color:  #009868 ;
+}
+.mar{
+    margin-top: 170px;
+    
+}
+.col{
+    color: #0264D6;
+}
+.mareg {
+    margin-top: 220px;
+    font-size: 50px;
+    font-family: sans-serif;
+  }
+  .ma{
+    margin-top: 370px;
+    font-family: sans-serif;
+  }
+
+@media (max-width: 576px) {
+    .mareg {
+      margin-top: 350px;
+      font-size: 28px;
+      font-family: sans-serif;
+     
+    }
+    .mar{
+        margin-top: 300px;
+        
+    }
+    .ma{
+        margin-top: 460px;
+        font-family: sans-serif;
+      }
+  
+   
+  }

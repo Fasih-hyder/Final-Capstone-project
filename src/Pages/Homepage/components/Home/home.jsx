@@ -55,7 +55,7 @@ function Home() {
             <div className="col-md-6">
               <h1 className="font-c">
                 <b>
-                  Best Healthcare For Your{" "}
+                  Best Healthcare For Your
                   <span className="Font-H">Healthy</span> Life
                 </b>
               </h1>
@@ -64,24 +64,24 @@ function Home() {
                 blanditiis praesentium voluptatum deleniti atque corrupti.
               </p>
               <div className="mt-5 ">
-                <img src={click} alt="" />{" "}
+                <img src={click} alt="" />
                 <span className="font-s ">Skilled Dentist</span>
-                <img className="margin-x" src={click} alt="" />{" "}
+                <img className="margin-x" src={click} alt="" />
                 <span className="font-s  ">Letest Technology</span>
               </div>
               <div className="mt-3">
-                <img src={click} alt="" />{" "}
+                <img src={click} alt="" />
                 <span className="font-s">Affortable Cost</span>
-                <img className="margin-x" src={click} alt="" />{" "}
+                <img className="margin-x" src={click} alt="" />
                 <span className="font-s  ">24 hour Service</span>
               </div>
               <div className="mt-5 d-flex ">
-                <img src={book} className="img-fluid ma" alt="" />
+                <img src={book} className="img-fluid " alt="" />
                 <img src={call} className="img-fluid " alt="" />
               </div>
             </div>
             <div className="col-md-6">
-              <img src={women} className="img-fluid" />
+              <img src={women}  className="img-fluid mt-5" />
             </div>
           </div>
         </div>

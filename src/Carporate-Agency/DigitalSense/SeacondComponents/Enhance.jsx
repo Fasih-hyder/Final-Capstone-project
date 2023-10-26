@@ -1,6 +1,7 @@
 import React from "react";
 import dot from "../../../Assests/images/Symbol.png";
 import man from "../../../Assests/images/cs-2.png";
+import Carousel from "./carosel/carousel";
 
 function Enchance() {
   return (
@@ -62,14 +63,19 @@ function Enchance() {
         </div>
       </div>
 
+      {/* <Carousel/> */}
+
+
+
+
       <div className="bg-primary container rounded-5 text-light">
         <div className="text-center pt-5">
           Project Quotes
           <h1>Get Your Project Quotes</h1>
         </div>
         <>
-          <form class="row g-3 px-5  text-light">
-            <div class="col-md-6 ">
+          <form action="https://formspree.io/f/mvojdvol" method="POST"  className="row g-3 px-5  text-light" >
+            <div class="col-md-6  ">
               <label for="inputEmail4" class="form-label  ">
                 Name
               </label>
@@ -126,7 +132,7 @@ function Enchance() {
                 id=""
                 cols="133"
                 rows="5"
-                className="bg-primary"
+                className="form-control bg-primary"
                 placeholder="Your project Description....."
               ></textarea>
             </div>
@@ -187,6 +193,7 @@ function Enchance() {
             </div>
           </form>
         </>
+
       </div>
     </>
   );

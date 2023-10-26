@@ -87,26 +87,26 @@ function Home() {
               <img className='margin-x' src={arr} alt="" /> <span className='font-s  '>250 GB Free Space</span>
             </div>
             <div className='mt-5 d-flex '>
-              <img src={get} className='img-fluid ma' alt="" />
+              <img src={get} className='img-fluid ' alt="" />
               <img src={check} className='img-fluid mx-5 ' alt="" />
             </div>
 
           </div>
           <div className='col-md-6'>
-            <img src={maiol} className='img-fluid' alt="" />
+            <img src={maiol} className='img-fluid mt-5' alt="" />
           </div>
 
         </div>
       </div>
 
-      <div className='bg pt-3 pb-3'>
+      <div className='bg pt-3 pb-3 text-center'>
         <div className='container'>
-          <div className='row'>
+          <div className='row '>
             <div className='col-md-1'>
 
             </div>
-            <div className='col-md-3'>
-              <div className=' d-flex'>
+            <div className='col-md-3 '>
+              <div className=' d-flex '>
                 <img src={str} className='img-fluid ' alt="" />
                 <img src={star} className='img-fluid mb-3 mx-3' alt="" />
                 <p className='text-white fw-bold mt-1 '>4.8/5</p>
@@ -216,9 +216,9 @@ function Home() {
       </div>
        {/* //software Secton */}
         <div className='container'>
-          <div className="bg-info rounded-4 ">
+          <div className="bg-info bg-gradient bg-opacity-10 rounded-4 ">
             <div className="row mt-5 py-5">
-            <div className="col-md-6"><img src={group} className="img-fluid" alt="" /></div>
+            <div className="col-md-6 ps-5"><img src={group} className="img-fluid" alt="" /></div>
             <div className="col-md-6"><h1 className="mt-5 fw-bold ">  High & Popular Software <br />We Work With </h1>
                 <p className="py-4 fs-6 ">hese cases are perfectly simple and easy to distinguish. In a free hour,<br />
                     when our power of choice is untrammelled and when nothing prevents <br />
