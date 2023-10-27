@@ -1,5 +1,4 @@
 import "./App.css";
-import Signin from "./Pages/Homepage/sign";
 import Homepage from "./Pages/Homepage/homepages";
 import Carporate from "./Carporate-Agency/DigitalSense/Carporate";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -11,6 +10,7 @@ import ShopSingle from "./Pages/Homepage/components/Shops/ShopSingle";
 import ShopCatlog from "./Pages/Homepage/components/Shops/ShopCatlog";
 // import { Offcanvas } from "bootstrap";
 import Offcanvas from "./Pages/Homepage/components/Shops/Offcanvas"
+import SignUpSec from "./Pages/Homepage/sign";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         },
         {
           path: "/Signin",
-          element: <Signin />,
+          element: <SignUpSec />
         },
         {
           path: "/Signup",

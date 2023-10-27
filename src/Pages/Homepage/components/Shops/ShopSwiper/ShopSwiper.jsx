@@ -53,8 +53,8 @@ function ShopSwiper() {
                     {card.map((data) => {
                         return (
                             <>
-                                <div className='col-md-3 mt-5 pt-5 '>
-                                    <div className='border rounded-3 p-3 '>
+                                <div className='col-md-3 mt-5 pt-5  '>
+                                    <div className=' rounded-3 p-3 '>
                                         <div><button type="button" class="btn btn-danger px-3">{data.Avliable}</button></div>
                                 {/* swiper */}
                                 <Swiper

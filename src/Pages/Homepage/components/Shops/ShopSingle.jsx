@@ -54,18 +54,18 @@ export default function ShopSingle() {
                   disableOnInteraction: false,
                 }}
                 loop={true}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+              
+                modules={[Autoplay, Pagination,]}
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src={pid1} className="rounded-5 img-fluid" alt="pix1" />
+                  <img src={pid1} className="rounded-5 img-fluid bg-light" alt="pix1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={pid2} className="rounded-5 img-fluid" alt="pic2" />
+                  <img src={pid2} className="rounded-5 img-fluid bg-light" alt="pic2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={pid3} className="rounded-5 img-fluid" alt="" />
+                  <img src={pid3} className="rounded-5 img-fluid bg-light" alt="" />
                 </SwiperSlide>
               </Swiper>
             </div>

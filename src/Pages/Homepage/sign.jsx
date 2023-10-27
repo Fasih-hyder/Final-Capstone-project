@@ -1,92 +1,137 @@
-import React from "react";
-import image3 from "../../Assests/images/logo522.png";
-import social1 from "../../Assests/images/facebook.png";
-import social2 from "../../Assests/images/google+.png";
+import React, { useState } from "react";
+import logoicon from "../../Assests/images/logo522.png";
 import { Link, Outlet } from "react-router-dom";
-import {
-  MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBCheckbox,
-} from "mdb-react-ui-kit";
+const SignUpSec = () => {
+  const [firstName, setFirstName] = useState("");
+  const [firstNameMesg, setFirstNameMesg] = useState("Enter your Name");
+  const [showFirstNameError, setShowFirstNameError] = useState(false);
 
-function Signin() {
+  const [userPassword, setUserPassword] = useState("");
+  const [passwordMesg, setPasswordMesg] = useState("Enter your vaild password");
+  const [showUserPasswordError, setShowUserPasswordError] = useState(false);
+
+  const firstNameHandler = (e) => {
+    setFirstName(e.target.value);
+
+    if (firstName !== "")
+      // setShowFirstNameError(false)
+      setFirstNameMesg("Looks Good");
+  };
+  const userPasswordHandler = (e) => {
+    setUserPassword(e.target.value);
+
+    if (userPassword !== "")
+      // setShowUserPasswordError(false)
+      setPasswordMesg("Looks Good");
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    if (firstName === "") {
+      setShowFirstNameError(true);
+    }
+
+    if (userPassword === "") {
+      setShowUserPasswordError(true);
+    }
+  };
   return (
-    <>
-    <form  action="https://formspree.io/f/mvojdvol"  method="POST">
-      <MDBContainer
-        fluid
-        className="d-flex align-items-center justify-content-center "
-      >
-        <div className=""></div>
-        <MDBCard className="m-5 border-0" style={{ maxWidth: "500px" }}>
-          <MDBCardBody className="px-5">
-            <div className="d-flex justify-content-center">
-              <img src={image3} alt="" />
-            </div>
+    <div className="text-center ">
+      <div className="container">
+        <div className="row ">
+          <div className="col-md-3"></div>
+          <div className="col-md-6 p-5 border rounded-5 bg-light">
+            <img src={logoicon} className="img-fluid" alt="" />
+            <h1 className="fw-bold ">Hello,World</h1>
 
-            <h1 className="text-uppercase text-center mb-5 fw-bold">
-              Hello, Again
-            </h1>
-            <form action="">
-              <MDBInput
-                required
-                wrapperClass="mb-4"
-                placeholder="User Name"
-                size="lg"
-                id="form1"
-                type="text"
-              />
+            <div>
+              <form onSubmit={submitHandler}>
+                <div className="container-fluid row">
+                  <div className="col-md-12">
+                    <input
+                      className="px-3 py-2 rounded w-100 para-style border"
+                      value={firstName}
+                      onChange={firstNameHandler}
+                      type="text"
+                      placeholder="User Name"
+                    />
+                    {showFirstNameError && (
+                      <p
+                        className={`${
+                          firstNameMesg === "Looks Good"
+                            ? "text-success"
+                            : "text-danger"
+                        } fw-bold`}
+                      >
+                        {firstNameMesg}
+                      </p>
+                    )}
+                  </div>
+                </div>
 
-              <MDBInput
-                required
-                wrapperClass="mb-4"
-                placeholder="Password"
-                size="lg"
-                id="form3"
-                type="password"
-              />
-              <button type="submit" class="btn btn-primary btn-lg w-100">
-                Log in
-              </button>
-            </form>
-            <div className="d-flex flex-row justify-content-between  mb-4">
-              <MDBCheckbox
-                name="flexCheck"
-                id="flexCheckDefault"
-                label="Save Password"
-              />
-              <a class="nav-link active" aria-current="page" href="#">
-                Forget Password?
-              </a>
-            </div>
+                <div className="container-fluid row">
+                  <div className="col-md-12">
+                    <input
+                      className="px-3 py-2 rounded w-100 my-2 para-style border "
+                      value={userPassword}
+                      onChange={userPasswordHandler}
+                      type="password"
+                      placeholder="Password"
+                    />
+                    {showUserPasswordError && (
+                      <p
+                        className={`${
+                          passwordMesg === "Looks Good"
+                            ? "text-success"
+                            : "text-danger"
+                        } fw-bold`}
+                      >
+                        {passwordMesg}
+                      </p>
+                    )}
+                  </div>
 
-            <div className="text-center d-flex justify-content-around py-3">
-              <span className="">
-                <button className="text-white bg-primary px-5 py-2 rounded-2 border-0">
-                  Facebook
-                </button>
-              </span>
-              <button className="text-white bg-danger px-5 py-2 rounded-2 border-0">
-                Google
-              </button>
-              <br />
+                  <div className="">
+                    <input
+                      className="px-3 py-3 rounded border-0 btn btn-primary text-white w-100"
+                      type="submit"
+                      value="Login In"
+                    />
+                  </div>
+                  <div className="d-flex justify-content-between mt-3">
+                    <div>
+                      <input className="mt-1" type="checkbox" name="checkBox" />
+                      <span className="px-2">Save Password</span>
+                    </div>
+                    <span>Forgot Password?</span>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger px-5 mx-5 mt-3">
+                      
+                      Google+
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary px-5 mx-5  mt-3 "
+                    >
+                      
+                      Facebook
+                    </button>
+                  </div>
+                  <hr className="mt-3" />
+
+                  <div className="">
+                    Don't have an account yet?<Link to="/Signup">Sign Up</Link>
+                  </div>
+                </div>
+              </form>
             </div>
-            <hr className="mx-n5" />
-            <p className="text-center">
-              Don't have an account yet?
-              <Link className="fw-bold text-black  " to="/Signup">
-                Sign Up
-              </Link>
-            </p>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBContainer>
-     </form>
-      <Outlet />
-    </>
+          </div>
+          <div className="col-md-3"></div>
+        </div>
+      </div>
+    </div>
   );
-}
-
-export default Signin;
+};
+export default SignUpSec;

@@ -320,131 +320,6 @@ function Checkout() {
             </div>
 
             <div class="col-lg-5 offset-lg-1 pt-1 pt-md-4">
-              {/* <div class="exploi py-3 py-md-3">
-                <div class="d-flex w-100 justify-content-between align-items-center border-bottom pb-2 pb-sm-2 mb-3">
-                  <h2 class="offcanvas-title d-flex align-items-center mb-1">
-                    Your Order
-                    <span class="fs-6 fw-normal text-muted ms-3">
-                      (3 items)
-                    </span>
-                  </h2>
-                </div>
-
-                <div class="d-sm-flex align-items-center pb-4">
-                  <Link
-                    class="d-inline-block flex-shrink-0 gray-simple rounded-2 p-sm-2 p-md-3 mb-2 mb-sm-0"
-                    to="/ShopSingle"
-                  >
-                    <img src={handfree} width="100" alt="Product" />
-                  </Link>
-                  <div class="w-100 pt-1 ps-sm-4">
-                    <div class="d-flex mb-3">
-                      <div class="me-3">
-                        <h3 class="fs-5 mb-2">
-                          <span className="text-seacondry">
-                            Wireless Headphones
-                          </span>
-                        </h3>
-                        <div class="d-flex flex-wrap">
-                          <div class="text-muted fs-sm me-3">
-                            Color: <span class="text-dark fw-medium">Red</span>
-                          </div>
-                          <div class="text-muted fs-sm me-3">
-                            Weight:
-                            <span class="text-dark fw-medium">150g</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="text-end ms-auto">
-                        <div class="fs-5 font--bold mb-2">$35.00</div>
-                        <del class="text-muted font--medium ms-auto">
-                          $55.00
-                        </del>
-                      </div>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="count-input ms-n3">
-                        <span>
-                          <input
-                            className="py-3 rounded-4 form-control"
-                            type="number"
-                          />
-                        </span>
-                      </div>
-                      <div class="nav justify-content-end">
-                        <a
-                          class="fs-4 p-2"
-                          href="#"
-                          data-bs-toggle="tooltip"
-                          aria-label="Remove"
-                          data-bs-original-title="Remove Item"
-                        >
-                          <img src={deelt} className="img-fluid" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-sm-flex align-items-center pb-4">
-                  <Link
-                    class="d-inline-block flex-shrink-0 gray-simple rounded-2 p-sm-2 p-md-3 mb-2 mb-sm-0"
-                    to="/ShopSingle"
-                  >
-                    <img src={handfree2} width="100" alt="Product" />
-                  </Link>
-                  <div class="w-100 pt-1 ps-sm-4">
-                    <div class="d-flex mb-3">
-                      <div class="me-3">
-                        <h3 class="fs-5 mb-2">
-                          <span className="text-seacondry">
-                            High Headphones
-                          </span>
-                        </h3>
-                        <div class="d-flex flex-wrap">
-                          <div class="text-muted fs-sm me-3">
-                            Color: <span class="text-dark fw-medium">Red</span>
-                          </div>
-                          <div class="text-muted fs-sm me-3">
-                            Weight:
-                            <span class="text-dark fw-medium">150g</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="text-end ms-auto">
-                        <div class="fs-5 font--bold mb-2">$29.00</div>
-                        <del class="text-muted font--medium ms-auto">
-                          $69.00
-                        </del>
-                      </div>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="count-input ms-n3">
-                        <span>
-                          <input
-                            className="py-3 rounded-4 form-control"
-                            type="number"
-                          />
-                        </span>
-                      </div>
-                      <div class="nav justify-content-end">
-                        <a
-                          class="fs-4 p-2"
-                          href="#"
-                          data-bs-toggle="tooltip"
-                          aria-label="Remove"
-                          data-bs-original-title="Remove Item"
-                        >
-                          <img src={deelt} className="img-fluid" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
-              </div> */}
-
               {items?.map((product) => {
                 return (
                   <>
@@ -460,54 +335,61 @@ function Checkout() {
                         />
                       </div>
                       <div className="d-flex mt-3  ">
-                    <span className="px-3">
-                    {product?.OldPrice}
-                      </span>
-                      <span>
-                    {product?.NewPrice}
-                      </span>
-                  </div>
-                
-                    
+                        <span className="px-3">Old Price <del>{product?.OldPrice} </del> </span>
+                        <span>New Price{product?.NewPrice}</span>
+                      </div>
                     </div>
-                    <div class="pb-3">
-                  <div class="d-sm-flex align-items-center border-top pt-4">
-                    <div class="input-group input-group-sm mb-3 mb-sm-0 me-sm-4 me-md-5 p-2 border rounded-3">
-                      <input
-                        class="form-control form-control-md text-uppercase border-0"
-                        type="text"
-                        placeholder="Your coupon code"
-                      />
-                      <button
-                        class="btn btn-md btn-primary rounded-2"
-                        type="button"
-                      >
-                        Apply coupon
-                      </button>
+                    <form>
+                      <div className=" ">
+                        <div className="border p-2 d-flex rounded-4 ">
+                          <span>
+                            
+                            <input
+                              type="text"
+                              className="form-control border-0 form-control"
+                              placeholder=" YOUR COPPIN CODE"
+                            />
+                          </span>
+                          <a
+                            class="btn btn-primary offset-md-4 "
+                            href="#"
+                            role="button"
+                          >
+                            APPLY COPIN
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                    <div className="container mt-3">
+                      <div className="row">
+                        <div className="col-md-4">Subtotal:</div>
+                        <div className="col-md-4"></div>
+                        <div className="col-md-4 .offset-md-4">$172.00</div>
+                      </div>
+                      <div className="row ">
+                        <div className="col-md-4">GST:</div>
+                        <div className="col-md-4"></div>
+                        <div className="col-md-4 .offset-md-4">$22.00</div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-4">Shipping Cost:</div>
+                        <div className="col-md-4"></div>
+                        <div className="col-md-4 .offset-md-4">$12.00</div>
+                      </div>
                     </div>
-                  </div>
-                  <ul class="list-unstyled py-3 mb-0">
-                    <li class="d-flex justify-content-between mb-2">
-                      Subtotal:<span class="fw-semibold ms-2">$172.00</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      GST:<span class="fw-semibold ms-2">$22.00</span>
-                    </li>
-                    <li class="d-flex justify-content-between mb-2">
-                      Shipping Cost:<span class="fw-semibold ms-2">$12.00</span>
-                    </li>
-                  </ul>
-
-                  <div class="d-flex align-items-center justify-content-between border-top pt-4">
-                    Total:
-                    <span class="fs-3 font--bold text-dark ms-2">$206.00</span>
-                  </div>
-                </div>
+                    <div>
+                      <hr />
+                    </div>
+                    <div className="row">
+                      <div className="col-md-4">Total:</div>
+                      <div className="col-md-4"></div>
+                      <div className="col-md-4 .offset-md-4">
+                        <b className="fs-3">$206.00</b>
+                      </div>
+                    </div>
                   </>
-                  
                 );
               })}
-              
             </div>
           </div>
         </div>

@@ -1,20 +1,86 @@
-import React from "react";
-import image4 from "../../Assests/images/logo-1.svg";
 
+import logo from "../../Assests/images/logo-1.svg";
+import React, { useState } from "react";
 import Man from "../../Assests/images/blog-2.jpg";
 import {
   MDBRow,
   MDBCol,
   MDBContainer,
   MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBCheckbox,
-  MDBCardImage,
+
 } from "mdb-react-ui-kit";
 import { Link, Outlet } from "react-router-dom";
 
 function Signup() {
+  const [userEmail, setUserEmail] = useState("");
+  const [emailMesg, setEmailMesg] = useState(
+      "Enter your vaild Email"
+  );
+  const [showUserEmailError, setShowUserEmailError] = useState(false);
+
+  const [firstName, setFirstName] = useState("");
+  const [firstNameMesg, setFirstNameMesg] = useState("Enter your Name");
+  const [showFirstNameError, setShowFirstNameError] = useState(false);
+
+  const [confirm, setConfirm] = useState("");
+  const [confirmMesg, setConfirmMesg] = useState("Confirm password");
+  const [showConfirmError, setShowConfirmError] = useState(false);
+
+  const [userPassword, setUserPassword] = useState("");
+  const [passwordMesg, setPasswordMesg] = useState("Enter your vaild password");
+  const [showUserPasswordError, setShowUserPasswordError] = useState(false);
+
+  const firstNameHandler = (e) => {
+      setFirstName(e.target.value);
+
+      if (firstName !== "")
+          // setShowFirstNameError(false)
+          setFirstNameMesg("Looks Good");
+  };
+
+  const confirmHandler = (e) => {
+      setConfirm(e.target.value);
+
+      if (confirm === "")
+          //setShowSurNameError
+          setConfirmMesg("Looks Good");
+  };
+
+  const userEmailHandler = (e) => {
+      setUserEmail(e.target.value);
+
+      if (userEmail !== "")
+          // setShowUserEmailError(false)
+          setEmailMesg("Looks Good");
+  };
+
+  const userPasswordHandler = (e) => {
+      setUserPassword(e.target.value);
+
+      if (userPassword !== "")
+          // setShowUserPasswordError(false)
+          setPasswordMesg("Looks Good");
+  };
+
+  const submitHandler = (e) => {
+      e.preventDefault();
+
+      if (firstName === "") {
+          setShowFirstNameError(true);
+      }
+
+      if (confirm === "") {
+          setShowConfirmError(true);
+      }
+
+      if (userEmail === "") {
+          setShowUserEmailError(true);
+      }
+
+      if (userPassword === "") {
+          setShowUserPasswordError(true);
+      }
+  };
   return (
     <>
       <MDBContainer fluid className="border-0">
@@ -22,103 +88,96 @@ function Signup() {
           <MDBCol>
             <MDBCard className="my-4">
               <MDBRow className="g-0">
-                <MDBCol md="6">
-                  <MDBCardBody className="px-5 ">
-                    <div className="mt-5 mb-5">
-                      <img src={image4} alt="" />
+              <div className="">
+                <div className="row">
+                    <div className="col-md-6 p-5">
+                        <img src={logo} width={200} className="img-fluid" alt="" />
+                        <h1 className="fw-bold pt-3">Create An Account</h1>
+                        <p>Welcome Back! Slect Methode to Register:</p>
+                        <div>
+                        <form onSubmit={submitHandler}>
+                                <div className="container-fluid row">
+                                    <div className="col-md-6">
+                                        <input
+                                            className='px-3 py-2 rounded w-100 para-style border'
+                                            value={firstName}
+                                            onChange={firstNameHandler}
+                                            type="text"
+                                            placeholder="Your Name"
+                                        />
+                                        {showFirstNameError && (
+                                            <p className={`${firstNameMesg === "Looks Good" ? "text-success" : "text-danger"} fw-bold`}>{firstNameMesg}</p>
+                                        )}
+                                    </div>
+
+                                    <div className="col-md-6">
+                                    <input
+                                            className='px-3 py-2 rounded w-100 para-style border '
+                                            value={userEmail}
+                                            onChange={userEmailHandler}
+                                            type="email"
+                                            placeholder="Email Address"
+                                        />
+                                        {showUserEmailError && (
+                                            <p className={`${emailMesg === "Looks Good" ? "text-success" : "text-danger"} fw-bold`}>{emailMesg}</p>
+                                        )}
+                                       
+                                    </div>
+                                </div>
+
+                                <div className="container-fluid row">
+                                    <div className="col-md-12">
+                                    <input
+                                            className='px-3 py-2 rounded w-100 my-2 para-style border '
+                                            value={userPassword}
+                                            onChange={userPasswordHandler}
+                                            type="password"
+                                            placeholder="Password"
+                                        />
+                                        {showUserPasswordError && (
+                                            <p className={`${passwordMesg === "Looks Good" ? "text-success" : "text-danger"} fw-bold`}>{passwordMesg}</p>
+                                        )}
+                                    </div>
+                                    <div className="col-md-12 py-4">
+                                    <input
+                                            className='px-3 py-2 rounded para-style w-100 border '
+                                            value={confirm}
+                                            onChange={confirmHandler}
+                                            type="text"
+                                            placeholder="Confirm Password"
+                                        />
+                                        {showConfirmError && (
+                                            <p className={`${confirmMesg === "Looks Good" ? "text-success" : "text-danger"} fw-bold`}>{confirmMesg}</p>
+                                        )}
+                                    </div>
+                                    <div className="mb-4">
+                                        <input className="mt-1" type="checkbox" name="checkBox"/><span className="px-2">I agree to Terms & Conditions</span>
+                                    </div>
+                                    <div className="">
+                                        <input className='px-3 py-3 rounded border-0 btn btn-primary text-white w-100' type="submit" value='Sign Up' />
+                                    </div>
+                                </div>
+                            </form>
+                            <p className="text-center">Or sign in with your social account</p>
+                            <div className="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-danger px-5 mt-3">G+ Google</button>
+                            <button type="button" class="btn btn-outline-primary px-5 mx-5 mt-3 ">F Facebook</button>
+                        </div>
+                        <div className="d-flex justify-content-center mt-3">
+                      <span>Have an account already?</span> <Link to="/Signin"><span className="ps-2 " >Login Your Account</span></Link> 
+                    </div>
+                        </div>
                     </div>
 
-                    <h1 className="text-uppercase t mb- fw-bold">
-                      Create An Account
-                    </h1>
-
-                    <p className="">Welcome Back! Slect Methode to Register:</p>
-                    <MDBRow>
-                      <MDBCol md="6">
-                        <form action="">
-                          <MDBInput
-                            wrapperClass="mb-4"
-                            placeholder="First Name"
-                            size="lg"
-                            id="form1"
-                            type="text"
-                            required
-                          />
-                        </form>
-                      </MDBCol>
-
-                      <MDBCol md="6">
-                        <MDBInput
-                          wrapperClass="mb-4 required"
-                          placeholder="Last Name"
-                          size="lg"
-                          id="form2"
-                          type="text"
-                          required
-                        />
-                      </MDBCol>
-                    </MDBRow>
-
-                    <MDBInput
-                      wrapperClass="mb-4"
-                      placeholder="Password"
-                      size="lg"
-                      id="form3"
-                      type="password"
-                      required
-                    />
-                    <MDBInput
-                      wrapperClass="mb-4"
-                      placeholder="Confirm Password"
-                      size="lg"
-                      id="form3"
-                      type="password"
-                      required
-                    />
-
-                    <div className="d-flex flex-row justify-content-between  mb-4">
-                      <MDBCheckbox
-                        name="flexCheck"
-                        id="flexCheckDefault"
-                        label="I agree to Terms & Conditions"
-                        required
-                      />
+                    <div className="col-md-6">
+                        <img style={{height:650}} src={Man}  className="img-fluid" alt="" />
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg w-100">
-                      Sign up
-                    </button>
+                    
 
-                    <p className="text-center">
-                      Or sign in with your social account
-                    </p>
-                    <div className=" d-flex justify-content-around   py-3 ">
-                      <span className="">
-                        <button className="text-white bg-primary px-5 py-2 rounded-2 border-0 ">
-                          Facebook
-                        </button>
-                      </span>
-                      <button className="text-white bg-danger px-5 py-2 rounded-2 border-0">
-                        Google+
-                      </button>
-                      <br />
-                    </div>
-                    <p className="text-center mt-5">
-                      {" "}
-                      Have an account already?
-                      <Link className="fw-bold  " to="/Signin">
-                        Login Your Account
-                      </Link>
-                    </p>
-                  </MDBCardBody>
-                </MDBCol>
-                <MDBCol md="6" className="d-none d-md-block">
-                  <MDBCardImage
-                    src={Man}
-                    alt="Sample photo"
-                    className="h-100"
-                    fluid
-                  />
-                </MDBCol>
+
+                </div>
+            </div>
+           
               </MDBRow>
             </MDBCard>
           </MDBCol>

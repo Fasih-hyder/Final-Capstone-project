@@ -1,8 +1,10 @@
 import image from "../../../../Assests/images/logo.png";
 import troggler from "../../../../Assests/images/Sort.svg";
-import sign from "../../../../Assests/images/Item → Link 2.svg";
+import sign from "../../../../Assests/images/man.png";
+import sign2 from "../../../../Assests/images/search.png";
 import appointment from "../../../../Assests/images//kart.png";
 import corp from "../../../../Assests/images/Corporate.png";
+
 import { Link, Outlet } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -10,7 +12,11 @@ import {
   increaseQuantity,
   removeItem,
 } from "../../../../functins/functins";
+
+
 const Navbar = () => {
+  
+
   const { items } = useSelector((state) => state.cart);
 
   const dispatch = useDispatch();
@@ -118,8 +124,23 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <Link to="/Signup">
+              <img
+                style={{ height: 20 }}
+                src={sign2}
+                class="img-fluid mx-3 "
+                alt=""
+              />
+            </Link>
             <Link to="/Signin">
-              <img src={sign} alt="" />
+            <img
+                  style={{ height: 20 }}
+                  src={sign}
+                  class="img-fluid mx-2 "
+                  alt=""
+                />
+             
+
             </Link>
 
             <span
@@ -130,9 +151,9 @@ const Navbar = () => {
               aria-controls="offcanvasRight"
             >
               <img
-                style={{ height: 40 }}
+                style={{ height: 20 }}
                 src={appointment}
-                class="img-fluid"
+                class="img-fluid mb-1 "
                 alt="..."
               />
             </span>
@@ -173,7 +194,7 @@ const Navbar = () => {
                       alt="pic"
                     />
                   </div>
-                
+
                   <div className="d-flex">
                     <button
                       className="bg-primary p-2 m-2  text-white bg-opacity-75 border-0 rounded-2"
@@ -197,7 +218,7 @@ const Navbar = () => {
                     {product?.NewPrice}
                       </span>
                   </div> */}
-                  
+
                   <button
                     className="bg-primary p-2 m-2 text-white bg-opacity-75 border-0 rounded-3"
                     onClick={() => removItemHandler(product)}
