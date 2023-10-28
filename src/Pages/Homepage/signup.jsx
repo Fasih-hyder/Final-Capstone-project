@@ -83,13 +83,12 @@ function Signup() {
   };
   return (
     <>
-      <MDBContainer fluid className="border-0">
-        <MDBRow className="  ">
-          <MDBCol>
-            <MDBCard className="my-4">
-              <MDBRow className="g-0">
+      <MDBContainer fluid className="">
+       
+        
+         
               <div className="">
-                <div className="row">
+                <div className="row border-0">
                     <div className="col-md-6 p-5">
                         <img src={logo} width={200} className="img-fluid" alt="" />
                         <h1 className="fw-bold pt-3">Create An Account</h1>
@@ -170,7 +169,7 @@ function Signup() {
                     </div>
 
                     <div className="col-md-6">
-                        <img style={{height:650}} src={Man}  className="img-fluid" alt="" />
+                        <img style={{height:650}} src={Man}  className="img-fluid rounded-4 mt-3" alt="" />
                     </div>
                     
 
@@ -178,10 +177,10 @@ function Signup() {
                 </div>
             </div>
            
-              </MDBRow>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
+            
+           
+       
+      
       </MDBContainer>
       <Outlet />
     </>

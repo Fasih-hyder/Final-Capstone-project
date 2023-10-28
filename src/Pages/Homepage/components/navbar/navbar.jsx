@@ -210,14 +210,7 @@ const Navbar = () => {
                       +
                     </button>
                   </div>
-                  {/* <div className="d-flex ">
-                    <span className="px-3">
-                    {product?.OldPrice}
-                      </span>
-                      <span>
-                    {product?.NewPrice}
-                      </span>
-                  </div> */}
+           
 
                   <button
                     className="bg-primary p-2 m-2 text-white bg-opacity-75 border-0 rounded-3"

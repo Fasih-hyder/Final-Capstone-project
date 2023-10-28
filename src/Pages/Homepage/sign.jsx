@@ -41,7 +41,7 @@ const SignUpSec = () => {
       <div className="container">
         <div className="row ">
           <div className="col-md-3"></div>
-          <div className="col-md-6 p-5 border rounded-5 bg-light">
+          <div className="col-md-6 p-5 shadow rounded-5 bg-light">
             <img src={logoicon} className="img-fluid" alt="" />
             <h1 className="fw-bold ">Hello,World</h1>
 

@@ -135,14 +135,7 @@ function HomeSwiper() {
       NewPrice: " $149",
       ShopingImg: shopingtary,
     },
-    // {
-    //     Avliable: "Sale",
-    //     immageUrl: Black,
-    //     heading: "Half Running Set",
-    //     OldPrice: "$919 ",
-    //     NewPrice: " $149",
-    //     ShopingImg: shopingtary,
-    // },
+
   ];
   return (
     <>
