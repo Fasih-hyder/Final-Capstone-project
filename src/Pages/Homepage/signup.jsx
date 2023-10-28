@@ -3,10 +3,9 @@ import logo from "../../Assests/images/logo-1.svg";
 import React, { useState } from "react";
 import Man from "../../Assests/images/blog-2.jpg";
 import {
-  MDBRow,
-  MDBCol,
+
   MDBContainer,
-  MDBCard,
+
 
 } from "mdb-react-ui-kit";
 import { Link, Outlet } from "react-router-dom";

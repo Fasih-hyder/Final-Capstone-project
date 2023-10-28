@@ -2,8 +2,8 @@ import React from "react";
 import "./home.css";
 import image from "../../../../Assests/images/logo.png";
 import troggler from "../../../../Assests/images/Sort.svg";
-import sign from "../../../../Assests/images/Item → Link 2.svg";
-import appointment from "../../../../Assests/images/Item → Link.svg";
+import sign from "../../../../Assests/images/Item Link 2.svg";
+import appointment from "../../../../Assests/images/Item Link.svg";
 import click from "../../../../Assests/images/span.square 6.svg";
 import book from "../../../../Assests/images/Button.svg";
 import call from "../../../../Assests/images/Link.png";
@@ -12,43 +12,6 @@ import women from "../../../../Assests/images/hs-1.png";
 function Home() {
   return (
     <div className="bg-color">
-      {/* <nav class="navbar navbar-expand-lg  ">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img height={40} src={image} /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""><img src={troggler} /></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto gap-3 mt-2 mx-3 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Coporter">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">User Account</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Documentation</a>
-              </li>
-
-
-
-            </ul>
-            <a href=""><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src={sign} height={40} />
-
-</button>
-
-
-            </a>
-           <a href="#">  <img src={appointment} /> </a>
-          
-          </div>
-        </div>
-      </nav> */}
-
       <div className=" margin">
         <div className="container">
           <div className="row">
