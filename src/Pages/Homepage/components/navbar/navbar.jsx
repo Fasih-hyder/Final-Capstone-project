@@ -150,13 +150,22 @@ const Navbar = () => {
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
+              <div className="position-relative">
+
+         
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+   {items.length}
+    <span class="visually-hidden">unread messages</span>
+  </span> 
               <img
                 style={{ height: 20 }}
                 src={appointment}
                 class="img-fluid mb-1 "
                 alt="..."
               />
+                 </div>
             </span>
+            
             {/* off Canvass */}
           </div>
         </div>

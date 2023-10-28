@@ -107,15 +107,14 @@ const SignUpSec = () => {
                     <span>Forgot Password?</span>
                   </div>
                   <div className="d-flex justify-content-center">
-                    <button type="button" class="btn btn-danger px-5 mx-5 mt-3">
+                    <button type="button" class="btn btn-danger px-5 mx-2 mt-3">
                       
                       Google+
                     </button>
                     <button
                       type="button"
-                      class="btn btn-primary px-5 mx-5  mt-3 "
-                    >
-                      
+                      class="btn btn-primary px-5 mx-  mt-3 "
+                    > 
                       Facebook
                     </button>
                   </div>
@@ -131,6 +130,7 @@ const SignUpSec = () => {
           <div className="col-md-3"></div>
         </div>
       </div>
+      <Outlet/>
     </div>
   );
 };
